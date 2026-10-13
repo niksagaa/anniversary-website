@@ -1,16 +1,42 @@
-# React + Vite
+# 3rd Anniversary Web Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personalized, vintage-themed web experience created with React, Vite, and Tailwind CSS to celebrate 3 years of memories together. Features automated scrolling photo galleries, an interactive vector-style vintage envelope with letter extraction animations, and background audio playback.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Vintage Vector Envelope Interaction:** Flat vector-style Kraft envelope design featuring a 3D flap unfolding animation, wax seal visuals, and smooth letter extraction.
+- **Dynamic Photo Columns:** Automated independent 4-column vertical scrolling powered by photos fetched via Google Drive API.
+- **Atmospheric Background Music:** Integrated local MP3 audio playback triggered naturally upon opening the envelope.
+- **Responsive & Dark Visual Design:** Moody `#18050e` background palette paired with frosted glass card UI and custom hidden-scrollbar styling.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework:** [React.js](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Icons & Graphics:** Inline SVG for precision vector envelope rendering
+- **Data Fetching:** Google Drive v3 REST API
+- **Audio:** HTML5 Audio API
+
+---
+
+## Project Structure
+
+```text
+anniversary-website/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── images/
+│   ├── music/
+│   │   └── 14-silent-sanctuary-violin-x-cello-cover.mp3
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .env.local
+├── package.json
+└── README.md
