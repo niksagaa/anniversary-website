@@ -1,17 +1,16 @@
 @import "tailwindcss";
 
-/* 1. I-hide ang scrollbar sa buong page (Chrome, Safari, Firefox, Edge) */
 html, body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  display: none;             /* Chrome, Safari, Opera */
+  display: none;
 }
 
-/* Custom utility class para sa partikular na elements */
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -42,22 +41,21 @@ body::-webkit-scrollbar {
 }
 
 .track-1 {
-  animation: scrollUp1 45s linear infinite;
+  animation: scrollUp1 70s linear infinite;
 }
 
 .track-2 {
-  animation: scrollUp2 55s linear infinite;
+  animation: scrollUp2 80s linear infinite;
 }
 
 .track-3 {
-  animation: scrollUp3 40s linear infinite;
+  animation: scrollUp3 90s linear infinite;
 }
 
 .track-4 {
-  animation: scrollUp4 60s linear infinite;
+  animation: scrollUp4 110s linear infinite;
 }
 
-/* Smooth Perspective Effect para sa 3D Envelope */
 .perspective-1000 {
   perspective: 1000px;
 }
